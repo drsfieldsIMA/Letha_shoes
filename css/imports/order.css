@@ -1,0 +1,40 @@
+form {
+    font: 2em sans-serif;
+    max-width: 80%;
+    margin-left: 10%;
+  }
+  
+  p > label {
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea,
+  fieldset {
+    padding:2em 2em;
+    width : 100%;
+    border: 1px solid #333;
+    box-sizing: border-box;
+  }
+  
+  input:invalid {
+    box-shadow: 0 0 5px 1px red;
+  }
+  
+  input:focus:invalid {
+    box-shadow: none;
+  }
+
+  button{
+    background-color:#f89104;
+    border: none;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    padding: 0.4em 0;
+    border-radius: .5em;
+    font-size: 1.3em;
+    cursor: pointer;
+}

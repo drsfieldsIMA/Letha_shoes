@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Order form for Letha shoes">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="css/imports/order.css" />
+</head>
+<body>
+
+    <form>
+        <p>
+          <fieldset>
+            <legend>Are You a Letha Member?<abbr title="This field is mandatory" aria-label="required">*</abbr></legend>
+            <input type="radio" required name="member" id="r1" value="yes"><label for="r1">Yes</label>
+            <input type="radio" required name="member" id="r2" value="no"><label for="r2">No</label>
+          </fieldset>
+        </p>
+        <p>
+          <label for="f1">What is your title?<abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+          <input type="text" id="f1" name="title" list="l1" required
+                 pattern="[Mr]|[Mrs]|[Dr]|[Miss]">
+          <datalist id="l1">
+            <option>Mr</option>
+            <option>Mrs</option>
+            <option>Dr</option>
+            <option>Miss</option>
+          </datalist>
+        </p>
+        <p>
+          <label for="t2">What's your first name?</label>
+          <input type="text" id="t2" name="first-name">
+        </p>
+        <p>
+            <label for="t3">What's your second name?</label>
+            <input type="text" id="t3" name="second-name">
+        </p>
+        <p>
+          <label for="t4">Credit or debit number?</label>
+          <textarea id="t4" type="number" maxlength="13" rows="5"></textarea>
+        </p>
+        <p>
+          <button>Submit</button>
+        </p>
+      </form>
+
+
+</body>
+</html>

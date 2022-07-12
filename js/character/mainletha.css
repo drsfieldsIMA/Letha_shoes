@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import "imports/variables.css";
+@import "imports/layout.css";
+@import "imports/ui.css";
+@import "imports/navs.css";
+@import "imports/card.css";
+@import "imports/details.css";
+@import "imports/form.css";
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Monteserrat'; 
+}
+
+.contact_details{
+    float: left;
+    margin-left: 25%;
+}
+
+.contact_details h1{
+    color: white;
+    display: block;
+}
+
+.home-logo{
+    cursor: pointer;
+    width: 80%;
+    height: 7em;
+    margin-right: 18px;
+}
+
+nav{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem 0.2rem;
+    color: black;
+}
+
+nav li{
+    display: inline-block;
+    font-family: 'Monteserrat'; 
+    font-size: 1.2em;
+    padding: 0px 15px;
+}
+
+nav a, nav li a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+
+nav li a:hover{
+    text-decoration: underline;
+    color: #307d99;
+}
+  
+.active{
+    font-weight: bold;
+}
+
+.h1-boot{
+    font-family: 'Cortado';
+    font-size: 2em;
+    color: white;
+    padding-right: 12px;
+    font-weight: 300;
+    padding-top: 0;
+    margin-top: 0em;
+}
+
+body {
+    font-family: 'Monteserrat', sans-serif;
+    margin: 0;  
+}
+
+.accordion {
+    max-width: 70%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: "Quicksand", sans-serif;
+    background: #2987A8;
+    display: center;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.accordion_label{
+  padding: 13px 13px;
+  text-align: center;
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 1.9em;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.1s;
+  width: 91%;
+  margin-bottom: 5px;
+  margin-left: 50px;
+}
+
+.accordion_label:hover {
+    background-color: #2987A8;
+  }
+  
+ .accordion_label::after {
+    background-color: #2987A8;
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF;" /></svg>');
+    background-image: white;
+    background-size: contain;
+    transition: transform 0.4s;
+}
+
+.accordion_content {
+    height: fit-content;
+    background: #ffffff;
+    line-height: 1.6;
+    font-size: 0.85em;
+    display: none;
+    padding-top: 1em;
+}
+
+.accordion_content h2{
+    color: black;
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+
+.accordion_content p {
+    font-family:  "Quicksand", sans-serif;
+    font-size: 1.6em;
+    height: fit-content;
+    margin-top: 1.8px;
+    margin-bottom: 1px;
+}
+
+.accordion_input {
+    display: none;
+}
+
+.accordion_input:checked ~ .accordion_content {
+    display: block;
+}
+
+.accordion_input:checked ~ .accordion_label::after {
+    transform: translateY(-50%) rotate(0.5turn);
+}
+
+.amazon{
+z-index: 8;
+background-color: rgb(240, 240, 13);
+border: black 4px;
+width: 75%;
+color:black;
+font-weight: bold;
+padding: 1.618em 0;
+border-radius: 0.809em;
+font-size: 1.3em;
+cursor: pointer;
+margin-bottom: 1.618em;
+margin-top: 1.618em;
+text-decoration: none;
+margin-left: 140px;
+margin-bottom: 50px;
+}
+
+.amazon a{
+    color: black;
+    font-weight: bold;
+    font-size: 1.618em;
+    text-decoration: none;
+}
+
+.amazon:hover{
+    background-color: rgb(216, 126, 1);
+    text-decoration: none;
+}
+
+.detail-body{
+    display: inline;
+}
