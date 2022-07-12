@@ -1,8 +1,9 @@
 # Letha_shoes
 Letha shoes and Leather tannery online store
 
-open command line
-
-open Letha directory
-
-Enter code . or open index.html
+ about the installation. 
+```
+$ git clone https://Letha_Shoes
+$ cd ../path/to/the/file
+$ code .
+```
